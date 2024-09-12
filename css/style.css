@@ -200,110 +200,92 @@ footer .redes-sociais a img {
 }
 
 .filtros {
-  width: 600px;
-  height: 960px;
-  background-color: #023593;
-  border-left: 26px solid #1B1B1B;
+  width: 500px;
+  height: 632px;
+  background-color: #D9D9D9;
+  margin-top: 75px;
+  margin-left: 110px;
   display: flex;
   flex-direction: column;
-  flex-wrap: wrap;
-  align-content: center;
-  justify-content: flex-start;
-  align-items: flex-start;
-  position: relative;
-  margin-right: 0;
-}
+  align-items: center;
 
+}
+.filtros form {
+  margin-top: 22px;
+}
 
 .barra-pesquisa {
-  width: 264px;
-  height: 50px;
-  background-color: #888888;
+  width: 170px;
+  height: 30px;
   border-radius: 10px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-top: 65px;
-}
-
-form {
-  width: 100%;
-  height: 50px;
-  background-color: #888888;
-  display: flex;
-  align-items: center;
-  border-radius: 10px;
-  padding: 10px 20px;
-}
-
-form input {
-  background-color: #888888;
-  border: none;
-  width: 100%;
-  height: 50px;
+  background-color: #000;
+  transition: ease-in-out 0.2s;
   color: #FFF;
   font-family: Inter;
-  font-size: 20px;
+  font-size: 12px;
   font-style: normal;
   font-weight: 300;
   line-height: normal;
+  padding: 8px 0px 8px 14px;
+  margin-bottom: 20px;
 }
-
-form input::placeholder {
-  background-color: #888888;
-  border: none;
-  color: #FFF;
-  font-family: Inter;
-  font-size: 20px;
-  font-style: normal;
-  font-weight: 300;
-  line-height: normal;
+::placeholder {
+  color: white;
+  opacity: 1;
 }
-
-form input:focus {
+.barra-pesquisa:hover {
+  background-color: #2F2F2F;
+  transition: ease-in-out 0.2s;
+}
+.barra-pesquisa:focus {
   outline: none;
 }
-
-.barra-pesquisa button {
-  border: 0px;
-  border-radius: 10px;
-  width: 24px;
-  height: 50px;
-  background-color: #888888;
-  cursor: pointer;
+form button img {
+  width: 15px;
+  height: 15px;
+  position: relative;
+  right: 38px;
+  top: 2px;
 }
 
-.barra-pesquisa button img {
-  width: 24px;
-  height: 24px;
-}
 
-.filtros h1 {
-  color: #FFF;
+
+.filtros-nav div {
+  width: 300px;
+  height: 60px;
+  background-color: #D9D9D9;
+  border-bottom: #B8B8B8 solid 1px;
+  display: flex;
+  flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-between;
+}
+.filtros-nav div p {
+  color: #000;
   font-family: Inter;
-  font-size: 64px;
+  font-size: 16px;
   font-style: normal;
-  font-weight: 700;
+  font-weight: 300;
   line-height: normal;
-  margin-top: 30px;
+  margin-left: 16px;
 }
 
-.filtros ul {
-  color: #FFF;
-font-family: Inter;
-font-size: 32px;
-font-style: normal;
-font-weight: 700;
-line-height: normal;
+.filtros-nav div button {
+  width: 20px;
+  height: 10px;
+  margin-right: 14px;
 }
-
-.filtros ul li {
-  margin-left: 26px;
+.filtros-nav div button img {
+  width: 20px;
+  height: 10px;
+  margin-right: 14px;
 }
 
 .produtos {
-  margin-left: 118px;
-  margin-top: 148px;
+  margin-left: 50px;
+  margin-top: 75px;
+  margin-right: 150px;
 }
 
 .produtos ul {

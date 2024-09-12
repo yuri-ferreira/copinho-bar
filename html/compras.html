@@ -24,7 +24,7 @@
       </a>
       <nav>
         <ul>
-          <li><a href="/html/aonde-estamos.html">Aonde estamos</a></li>
+          <li><a href="/html/onde-estamos.html">Onde estamos</a></li>
           <li><a href="/html/quem-somos.html">Quem somos</a></li>
           <li>
             <a href="/html/cervejas-artesanais.html">Cervejas artesanais</a>
@@ -43,21 +43,29 @@
     </header>
     <section class="secao">
       <div class="filtros">
-        <div class="barra-pesquisa">
-          <form action="">
-            <input type="search" placeholder="Pesquisar" id="pesquisa" />
-            <button type="submit">
-              <img src="/img/lupa.png" alt="procurar" />
-            </button>
-          </form>
-        </div>
-        <h1>Filtros</h1>
-        <nav>
-          <ul>
-            <li>Disponível</li>
-            <li>Marca</li>
-            <li>Promoção</li>
-          </ul>
+        <form>
+          <div>
+            <input
+              type="search"
+              class="barra-pesquisa"
+              placeholder="Pesquisar"
+            />
+            <button type="submit"><img src="/img/lupa.png" alt="" /></button>
+          </div>
+        </form>
+        <nav class="filtros-nav">
+          <div class="f-of-promo">
+            <p>Promoção</p>
+            <button><img src="#" alt="" /></button>
+          </div>
+          <div class="f-preco">
+            <p>Preço</p>
+            <button><img src="#" alt="" /></button>
+          </div>
+          <div class="f-avaliacao">
+            <p>Avaliações</p>
+            <button><img src="#" alt="" /></button>
+          </div>
         </nav>
       </div>
       <div class="produtos">
