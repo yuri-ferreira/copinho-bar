@@ -99,7 +99,7 @@ section div img {
   height: 480px;
   object-fit: cover;
 }
-section div p {
+.container-img div p {
   color: white;
   font-family: Inter;
   font-size: 64px;
@@ -342,4 +342,195 @@ form button img {
     bottom: 10px;
     transition: ease-in-out 0.2s;
   }
+}
+
+
+.carrinho {
+  display: flex;
+  margin-top: 148px;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.carrinho-listagem {
+  margin-right: 500px;
+}
+
+.carrinho-listagem li {
+  width: 500px;
+  height: 200px;
+  background-color: #FFF;
+  border: #000 solid 1px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.carrinho-listagem li .imagem-produto-fundo {
+  width: 160px;
+  height: 160px;
+  background-color: #bebebe;
+  border-radius: 10px;
+  margin-left: 20px;
+}
+
+.carrinho-listagem li .imagem-produto-fundo img {
+  width: 160px;
+  height: 160px;
+}
+
+.informacoes-produto {
+  margin-left: 8px;
+}
+
+.informacoes-produto .qtd {
+  width: 100px;
+  height: 30px;
+  border: #000 solid 1px;
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.informacoes-produto .qtd p {
+  margin-left: 10px;
+  color: #000;
+  font-family: Inter;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.informacoes-produto h1 {
+  color: #000;
+  font-family: Inter;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.informacoes-produto p {
+  color: #000;
+  font-family: Inter;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.carrinho-total {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-content: center;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.carrinho-total h1 {
+  color: #000;
+  font-family: Inter;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  margin-bottom: 10px;
+}
+
+.carrinho-valores {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: flex-start;
+}
+
+.carrinho-valores h2 {
+  margin-right: 80px;
+  color: #000;
+ font-family: Inter;
+ font-size: 24px;
+ font-style: normal;
+ font-weight: 300;
+ line-height: normal;
+}
+
+.carrinho-valores p {
+  color: #000;
+  font-family: Inter;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+}
+
+.carrinho-valores-total h2 {
+  color: #000;
+  font-family: Inter;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.carrinho-valores-total p {
+  color: #000;
+  font-family: Inter;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.cupom {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.cupom img {
+  width: 20px;
+  height: 10px;
+}
+
+.cupom a {
+  color: #000;
+  font-family: Inter;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  transition: ease-in-out 0.2s;
+}
+
+.cupom a:hover {
+  color: #fff;
+  background-color: #000;
+  transition: ease-in-out 0.2s;
+}
+
+.carrinho-total button {
+  width: 312px;
+  height: 40px;
+  background-color: #000;
+  color: #FFF;
+  font-family: Inter;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  margin-top: 20px;
+  transition: ease-in-out 0.2s;
+}
+
+.carrinho-total button:hover {
+  transition: ease-in-out 0.2s;
+  background-color: #2F2F2F;
+  cursor: pointer;
 }
