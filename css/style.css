@@ -250,7 +250,7 @@ form button img {
 
 
 
-.filtros-nav div {
+.filtro-vanilla {
   width: 300px;
   height: 60px;
   background-color: #D9D9D9;
@@ -258,10 +258,12 @@ form button img {
   display: flex;
   flex-direction: row;
     flex-wrap: nowrap;
-    align-items: center;
-    justify-content: space-between;
+  align-items: center;
+  justify-content: space-between;
+  transition: all 0.3s;
 }
-.filtros-nav div p {
+
+.filtro-vanilla p {
   color: #000;
   font-family: Inter;
   font-size: 16px;
@@ -271,15 +273,11 @@ form button img {
   margin-left: 16px;
 }
 
-.filtros-nav div button {
+.filtro-vanilla button {
   width: 20px;
   height: 10px;
   margin-right: 14px;
-}
-.filtros-nav div button img {
-  width: 20px;
-  height: 10px;
-  margin-right: 14px;
+  background-color: #000;
 }
 
 .produtos {
@@ -533,4 +531,44 @@ form button img {
   transition: ease-in-out 0.2s;
   background-color: #2F2F2F;
   cursor: pointer;
+}
+
+.teste {
+  height: 160px;
+  background-color: #B8B8B8;
+  border-bottom: #a1a1a1 solid 1px;
+  display: flex;
+  flex-direction: row;
+    flex-wrap: nowrap;
+  align-items: center;
+  justify-content: space-between;
+  transition: all 0.3s;
+}
+
+.teste p {
+  display: none;
+}
+
+.teste button {
+  width: 20px;
+  height: 10px;
+  margin-right: 14px;
+  background-color: #000;
+}
+
+.filtros-promo-d {
+  display: none;
+  transition: display 1s;
+}
+.filtros-promo-a{
+  display: flex;
+  flex-direction: column;
+  margin-left: 20px;
+  transition: display 1s;
+}
+
+
+.filtros-promo-a input {
+  margin-bottom: 10px;
+  transition: display 1s;
 }
