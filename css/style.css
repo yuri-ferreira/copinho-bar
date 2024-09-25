@@ -94,28 +94,29 @@ header nav button img {
   flex-flow: column nowrap;
 }
 
-section div img {
+.container-img1 {
+  background-image: url("/img/rotulo.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   width: 100%;
   height: 480px;
-  object-fit: cover;
+  display: flex;
+  align-items: end;
+  justify-content: center;
 }
-.container-img div p {
+.container-img .desktopp {
   color: white;
   font-family: Inter;
   font-size: 64px;
   font-style: normal;
   font-weight: 700;
   line-height: normal;
+  height: 62px;
 }
 
-section .container {
-  position: relative;
-}
-
-section div .bottomleft {
-  position: absolute;
-  bottom: -11px;
-  left: 110px;
+.mobilep {
+  display: none;
 }
 
 .carrossel-bebidas {
@@ -534,3 +535,151 @@ form button img {
   background-color: #2F2F2F;
   cursor: pointer;
 }
+
+ /*  (telefone, 600px pra baixo) */
+ @media only screen and (max-width: 600px)  {
+  header {
+    width: 100%;
+  }
+  .nav-desktop {
+    display: none;
+  }
+  .container-img1 {
+    height: 260px;
+  }
+  .desktopp {
+   display: none;
+  }
+  .mobilep {
+    display: block;
+    color: white;
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    height: calc(1vw + 1vh + 2.4vmin);
+    font-size: calc(1vw + 1vh + 2.5vmin);
+  }
+  footer {
+    display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        height: 350px;
+  }
+  footer a{
+    margin-bottom: 2%;
+  }
+  .footer-callback {
+    display: flex;
+    flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        width: 80%;
+        height: fit-content;
+        gap: 0;
+  }
+  .footer-callback ul {
+    margin-top: 40px;
+  }
+  .redes-sociais {
+    display: flex;
+    flex-direction: row;
+    margin-top: 0;
+    margin-bottom: 40px;
+  }
+  .premios-certificados {
+    display: none;
+  }
+  .filtros {
+    display: none;
+  }
+  .produtos {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .produtos ul {
+    display: flex;
+        flex-direction: row;
+        align-content: center;
+        justify-content: center;
+        align-items: center;
+  }
+ }
+
+ /*  (tablets e telefone maior, 600px pra cima) */
+ @media only screen and (min-width: 600px) and (max-width: 768px) {
+  .nav-desktop {
+    display: none;
+  }
+  .container-img1 {
+    height: 260px;
+  }
+  .desktopp {
+    display: none;
+   }
+   .mobilep {
+     display: block;
+     color: white;
+     font-family: Inter;
+     font-style: normal;
+     font-weight: 700;
+     line-height: normal;
+     height: calc(1vw + 1vh + 4.3vmin);
+     font-size: calc(1vw + 1vh + 4.5vmin);
+   }
+  footer {
+    display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        height: 350px;
+  }
+  footer a{
+    margin-bottom: 2%;
+  }
+  .footer-callback {
+    display: flex;
+    flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        width: 80%;
+        height: fit-content;
+        gap: 0;
+  }
+  .footer-callback ul {
+    margin-top: 40px;
+  }
+  .redes-sociais {
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  .premios-certificados {
+    display: none;
+  }
+ }
+ 
+ /* (tablets na horizontal, 768px pra cima) */
+ @media only screen and (min-width: 768px) {
+
+ }
+ 
+ /* (notebook/desktops, 992px pra cima) */
+ @media only screen and (min-width: 992px) {
+
+ }
+ 
+ /* (notebook grande e desktops grande, 1200px pra cima) */
+ @media only screen and (min-width: 1200px) {
+
+ } 
