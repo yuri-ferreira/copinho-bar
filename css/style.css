@@ -23,7 +23,7 @@ header {
   transition: ease-in-out 0.2;
 }
 
-header nav ul{
+header .nav-desktop ul{
   display: flex;
   flex-flow: row nowrap;
   justify-content: space-around;
@@ -31,7 +31,7 @@ header nav ul{
   list-style: none;
 }
 
-header nav ul li a {
+header .nav-desktop ul li a {
   color: white;
   font-family: "Inter", sans-serif;
   font-size: 30px;
@@ -42,7 +42,7 @@ header nav ul li a {
   text-decoration: none;
 }
 
-header nav ul li a:hover {
+header .nav-desktop ul li a:hover {
   color: yellow;
 }
 
@@ -74,7 +74,7 @@ button {
   padding: 0;
 }
 
-header nav button {
+header .nav-desktop button {
   width: 70px;
   height: 46px;
   background-color: #013AA5;
@@ -82,14 +82,74 @@ header nav button {
   transition: 0.3s;
 }
 
-header nav button:hover {
+header .nav-desktop button:hover {
   background-color: #074BCB;
   transition: 0.3s;
 }
 
-header nav button img {
+header .nav-desktop button img {
   width: 36px;
   height: 35px;
+}
+
+.nav-mobile {
+  display: none;
+}
+.menu-fora {
+  background-color: #0042BD;
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  right: -2000px;
+  z-index: 1;
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: column;
+  transition: ease-in-out .3s;
+}
+.menu-fora button {
+  margin-right: auto;
+  margin-top: 20px;
+  margin-left: 20px;
+}
+.menu-fora button img {
+  width: 36px;
+  height: 36px;
+}
+.menu-fora.ativo {
+  right: 0;
+}
+.hdr2 {
+  display: flex;
+  margin-right: 20px;
+}
+.menu-fora ul {
+  display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    list-style: none;
+    margin-top: 60px;
+    margin-left: 20px;
+}
+.menu-fora ul li {
+  margin-bottom: 10px;
+}
+.menu-fora ul li a {
+  color: white;
+  font-family: "Inter", sans-serif;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  padding-right: 30px;
+  text-decoration: none;
+}
+.menu-fora ul li a:hover {
+  color: yellow;
 }
 
 .imagem-header {
@@ -562,6 +622,13 @@ form button img {
   .nav-desktop {
     display: none;
   }
+  .nav-mobile {
+    display: flex;
+  }
+  .menuham img {
+  height: 36px;
+  width: 36px;
+  } 
   .container-img1 {
     height: 260px;
     filter: brightness(93%);
