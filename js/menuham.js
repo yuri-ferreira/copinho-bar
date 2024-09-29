@@ -10,3 +10,4 @@ function menuAtivo () {
 function menuDesativado () {
   document.getElementById('menuFora').classList.remove('ativo')
 }
+

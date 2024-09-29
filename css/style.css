@@ -706,6 +706,13 @@ form button img {
   .nav-desktop {
     display: none;
   }
+  .nav-mobile {
+    display: flex;
+  }
+  .menuham img {
+  height: 36px;
+  width: 36px;
+  } 
   .container-img1 {
     height: 260px;
     filter: brightness(93%);
@@ -783,6 +790,13 @@ form button img {
   .nav-desktop {
     display: none;
   }
+  .nav-mobile {
+    display: flex;
+  }
+  .menuham img {
+  height: 36px;
+  width: 36px;
+  } 
   .container-img1 {
     height: 260px;
     filter: brightness(93%);
@@ -847,21 +861,24 @@ form button img {
     height: auto;
     width: 140px;
   }
-  header nav button {
-    width: 20px;
-    height: 20px;
+  header .nav-desktop button {
+    width: 30px;
+    height: 30px;
     margin-right: 20px;
   }
-  header nav button a img {
-    width: 20px;
-    height: 20px;
+  header .nav-desktop button a img {
+    width: 30px;
+    height: 30px;
   }
-  header nav ul li a {
-    font-size: 20px;
+  header .nav-desktop ul li a {
+    font-size: 26px;
   }
  }
  
  /* (notebook grande e desktops grande, 1200px pra cima) */
  @media only screen and (min-width: 1200px) {
-
+  .logo {
+    height: auto;
+    width: 160px;
+  }
  } 
