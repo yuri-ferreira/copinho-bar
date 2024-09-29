@@ -192,10 +192,29 @@ header .nav-desktop button img {
   margin-bottom: 140px;
 }
 
-.carrossel-bebidas div {
-  width: 944px;
-  height: 380px;
-  background-color: grey;
+.caixa-bebidas {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 600px;
+}
+
+.caixa-bebidas i {
+  cursor: pointer;
+}
+
+.carrossel  {
+  display: flex;
+  flex-flow: row;
+  flex-wrap: nowrap;
+  list-style-type: none;
+  overflow: hidden;
+  scroll-behavior: smooth;
+}
+
+.carrossel-bebidas .caixa-bebidas img {
+   width: 200px;
+   height: auto;
 }
 
 footer {
@@ -919,3 +938,10 @@ form button img {
     width: 160px;
   }
  } 
+
+ @media screen and (max-width: 600px) {
+  .caixa-bebidas  .carrossel {
+    max-width: 200px;
+    height: auto;
+  }
+ }
