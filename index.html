@@ -22,7 +22,7 @@
           class="logo"
         />
       </a>
-      <nav>
+      <nav class="nav-desktop">
         <ul>
           <li><a href="/html/onde-estamos.html">Onde estamos</a></li>
           <li><a href="/html/quem-somos.html">Quem somos</a></li>
@@ -32,7 +32,7 @@
           <li><a href="/html/contato.html">Contato</a></li>
         </ul>
       </nav>
-      <nav>
+      <nav class="nav-desktop">
         <button>
           <a href="html/compras.html"><img src="img/compras.png" alt="" /></a>
         </button>
@@ -40,12 +40,30 @@
           <a href="html/perfil.html"><img src="img/login.png" alt="" /></a>
         </button>
       </nav>
+      <nav class="nav-mobile">
+        <button class="menuham" id="abrirMenu"><img src="/img/h-menu.png" alt="menu"></button>
+      </nav>
+      <div class="menu-fora" id="menuFora">
+        <div class="hdr2">
+        <button id="fecharMenu"><img src="/img/fechar.png" alt="fechar"></button>
+        <div class="hdr2">
+         <button><a href="/html/perfil.html"><img src="/img/login.png" alt=""></a></button>
+      <button><a href="/html/compras.html"><img src="/img/compras.png" alt=""></a></button>
+    </div>
+    </div>
+        <ul>
+          <li><a href="index.html">Página inicial</a></li>
+          <li><a href="/html/onde-estamos.html">Onde estamos</a></li>
+          <li><a href="/html/quem-somos.html">Quem somos</a></li>
+          <li><a href="/html/cervejas-artesanais.html">Cervejas artesanais</a></li>
+          <li><a href="/html/contato.html">Contato</a></li>
+        </ul>
+      </div>
     </header>
     <section class="container-img">
-      <div class="container">
-        <img src="img/rotulo.png" alt="rotulo da cerveja oficial copinho bar" />
-        <div class="bottomleft">
-          <p>A maior carta de cerveja do Rio de Janeiro.</p>
+      <div class="container-img1">
+            <p class="desktopp">A maior carta de cerveja do Rio de Janeiro.</p>
+            <p class="mobilep">A maior carta de cerveja do RJ.</p>
         </div>
       </div>
     </section>
@@ -93,7 +111,10 @@
           /></a>
         </div>
       </div>
-      <div class="premios-certificados"></div>
+      <div class="premios-certificados">
+        <img src="/img/travelerchoice.gif" alt="">
+      </div>
     </footer>
+    <script src="/js/menuham.js"></script>
   </body>
 </html>

@@ -1,16 +1,16 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" href="img/favicon.png" />
+    <link rel="stylesheet" href="/css/style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="/css/style.css" />
     <title>Copinho Bar</title>
   </head>
   <body>
@@ -22,7 +22,7 @@
           class="logo"
         />
       </a>
-      <nav>
+      <nav class="nav-desktop">
         <ul>
           <li>
             <a href="/html/onde-estamos.html">Onde estamos</a>
@@ -34,14 +34,47 @@
           <li><a href="/html/contato.html">Contato</a></li>
         </ul>
       </nav>
-      <nav>
+      <nav class="nav-desktop">
         <button>
-          <a href="html/compras.html"><img src="/img/compras.png" alt="" /></a>
+          <a href="/html/compras.html"><img src="/img/compras.png" alt="" /></a>
         </button>
         <button>
           <a href="/html/perfil.html"><img src="/img/login.png" alt="" /></a>
         </button>
       </nav>
+      <nav class="nav-mobile">
+        <button class="menuham" id="abrirMenu">
+          <img src="/img/h-menu.png" alt="menu" />
+        </button>
+      </nav>
+      <div class="menu-fora" id="menuFora">
+        <div class="hdr2">
+          <button id="fecharMenu">
+            <img src="/img/fechar.png" alt="fechar" />
+          </button>
+          <div class="hdr2">
+            <button>
+              <a href="/html/perfil.html"
+                ><img src="/img/login.png" alt=""
+              /></a>
+            </button>
+            <button>
+              <a href="/html/compras.html"
+                ><img src="/img/compras.png" alt=""
+              /></a>
+            </button>
+          </div>
+        </div>
+        <ul>
+          <li><a href="/index.html">Página inicial</a></li>
+          <li><a href="/html/onde-estamos.html">Onde estamos</a></li>
+          <li><a href="/html/quem-somos.html">Quem somos</a></li>
+          <li>
+            <a href="/html/cervejas-artesanais.html">Cervejas artesanais</a>
+          </li>
+          <li><a href="/html/contato.html">Contato</a></li>
+        </ul>
+      </div>
     </header>
     <section class="secao">
       <div class="filtros">
@@ -138,5 +171,6 @@
       </div>
     </section>
     <script src="/js/script.js"></script>
+    <script src="/js/menuham.js"></script>
   </body>
 </html>
