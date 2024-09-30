@@ -188,8 +188,7 @@ header .nav-desktop button img {
   display: flex;
   justify-content: center;
   justify-self: center;
-  margin-top: 40px;
-  margin-bottom: 140px;
+  margin-top: 10px;
 }
 
 .caixa-bebidas {
@@ -215,6 +214,17 @@ header .nav-desktop button img {
 .carrossel-bebidas .caixa-bebidas img {
    width: 200px;
    height: auto;
+}
+.feed-instagram {
+  display: flex;
+  justify-content: center;
+}
+.placeh {
+  width: 800px;
+  height: 400px;
+  display: flex;
+  background-color: #000;
+  margin-top:60px;
 }
 
 footer {
