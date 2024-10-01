@@ -236,16 +236,10 @@ footer {
   display: flex;
   flex-flow: row;
   align-items: center;
-  justify-content: center;
+  justify-content: space-around;
 }
 
-
-footer .premios-certificados .mT {
-  width: 160px;
-  height: 100%;
-}
-
-footer .logo {
+footer logo {
     width: 284px;
     height: 102px;
 }
@@ -258,7 +252,6 @@ footer .logo {
   align-items: center;
   justify-content: center;
   gap: 184px;
-  margin-right: 200px;
 }
 
 footer ul {
@@ -297,7 +290,7 @@ footer .redes-sociais a img:hover {
 }
 
 .premios-certificados {
-  width: 300px;
+  width: 268px;
   height: 148px;
   background-color: #013AA5;
   display: flex;
@@ -307,7 +300,6 @@ footer .redes-sociais a img:hover {
 .premios-certificados img {
   width: 80px;
   height: 80px;
-  margin: 5px;
 }
 
 /* Compras */
@@ -955,7 +947,6 @@ form button img {
   .logo {
     height: auto;
     width: 160px;
-    margin-right: 200px;
   }
  } 
 
