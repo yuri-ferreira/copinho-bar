@@ -818,17 +818,7 @@ line-height: normal;
   font-weight: 300;
   line-height: normal;
 }
-.caixa-login form .entrar-btn {
-  width: 400px;
-  height: 50px;
-  background-color: #000;
-  color: #FFF;
-  font-family: Inter;
-  font-size: 32px;
-  font-style: normal;
-  font-weight: 200;
-  line-height: normal;
-}
+
 .lembrar-esqueceu {
   display: flex;
   flex-direction: row;
@@ -840,6 +830,19 @@ line-height: normal;
   font-style: normal;
   font-weight: 300;
   line-height: normal;
+}
+.lembrar-esqueceu-r {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 18px 0;
+  color: #000;
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  margin-top: 40px;
 }
 .caixa-login form p {
   margin-top: 18px;
@@ -863,6 +866,80 @@ line-height: normal;
   color: #4d51a3;
   transition: ease-in-out 0.2s;
 }
+.caixa-registro {
+  width: 1000px;
+  height: 700px;
+  background-color: #F3F3F3;
+  border-radius: 50px;
+  display: flex;
+  align-self: center;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.caixa-registro h1 {
+  margin-bottom: 40px;
+  color: #000;
+font-family: Inter;
+font-size: 64px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+}
+.caixa-registro form {
+  display: flex;
+  align-self: center;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: nowrap;
+    width: 400px;
+}
+.caixa-registro form input {
+  margin-bottom: 10px;
+}
+.registros {
+  display: flex;
+  gap: 70px;
+}
+
+.caixa-registro form .inptG {
+  width: 400px;
+  height: 50px;
+  border-radius: 10px;
+  background: #E1E1E1;
+  border: none;
+  color: rgba(0, 0, 0, 0.32);
+  font-family: Inter;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  padding-left: 15px;
+}
+
+.caixa-registro form .lblG {
+  color: #000;
+  font-family: Inter;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+}
+
+.entrar-btn {
+  width: 400px;
+  height: 50px;
+  background-color: #000;
+  color: #FFF;
+  font-family: Inter;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 200;
+  line-height: normal;
+}
+
+
  /*  (telefone, 600px pra baixo) */
  @media only screen and (max-width: 600px)  {
   header {

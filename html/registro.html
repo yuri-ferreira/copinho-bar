@@ -75,22 +75,34 @@
     </div>
   </header>
   <section class="login">
-    <div class="caixa-login">
-      <h1>LOGIN</h1>
+    <div class="caixa-registro">
+      <h1>Nova conta.</h1>
       <form>
-        <label class="lblG" for="Email">Email</label>
-        <input class="inptG" type="text" name="Email" />
-        <label class="lblG" for="Senha">Senha</label>
-        <input class="inptG" type="password" name="Senha" />
-        <div class="lembrar-esqueceu">
-          <div>
-            <input type="checkbox" name="Lembrar" id="#" />
-            <label for="Lembrar">Lembrar</label>
+        <div class="registros">
+          <div class="r1">
+            <label class="lblG" for="Email">Email</label>
+            <input class="inptG" type="text" name="Email" />
+            <label class="lblG" for="Senha">Senha</label>
+            <input class="inptG" type="password" name="Senha" />
+            <label class="lblG" for="Endereco">Endereço</label>
+            <input class="inptG" type="text" name="Endereco" />
           </div>
-          <a href="#">Esqueceu a senha?</a>
+          <div class="r2">
+            <label class="lblG" for="Nome">Nome de usuário</label>
+            <input class="inptG" type="text" name="Nome" />
+            <label class="lblG" for="Telefone">Telefone</label>
+            <input class="inptG" type="tel" name="Telefone" />
+            <label class="lblG" for="dNascimento">Data de nascimento</label>
+            <input class="inptG" type="date" name="dNascimento" />
+          </div>
         </div>
-        <input type="submit" value="Entrar" class="entrar-btn" />
-        <p>Não tem conta? <a href="/html/registro.html">registre-se</a></p>
+        <div class="lembrar-esqueceu-r">
+          <div>
+            <input required type="checkbox" name="idade" id="#" />
+            <label for="idade">Tenho mais de 18 anos.</label>
+          </div>
+          <input type="submit" value="Registrar-se" class="entrar-btn" />
+        </div>
       </form>
     </div>
   </section>
