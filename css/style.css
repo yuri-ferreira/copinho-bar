@@ -938,7 +938,95 @@ line-height: normal;
   font-weight: 200;
   line-height: normal;
 }
-
+.perfil {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+}
+.caixa-perfil {
+  width: 1280px;
+  height: 810px;
+  background-color: #F3F3F3;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.info-login {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-content: center;
+  justify-content: center;
+  align-items: flex-start;
+}
+.caixa-perfil h1 {
+  color: #000;
+  font-family: Inter;
+  font-size: 50px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  margin-top: 30px;
+  margin-left: 50px;
+}
+.caixa-perfil .info-login h1 {
+  font-family: Inter;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  margin-left: 50px;
+  border-bottom: 1px solid black;
+  padding-bottom: 6px;
+}
+.pad {
+  padding-right: 47px;
+}
+.info-login-form {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  align-items: flex-start;
+  color: #000;
+  font-family: Inter;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  margin-left: 50px;
+  margin-top: 10px;
+}
+.info-login input {
+  height: 30px;
+  width: 400px;
+}
+.info-login form div {
+  display: flex;
+  flex-direction: column;
+}
+.logout {
+  width: 100px;
+  height: 30px;
+  flex-shrink: 0;
+  border-radius: 10px;
+  background: #646464;
+  color: #FFF;
+  font-family: Inter;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  border: none;
+  display: flex;
+  align-self: center;
+  margin-top: 40px;
+  cursor: pointer;
+}
+.logout:hover {
+  background-color: #585858;
+}
 
  /*  (telefone, 600px pra baixo) */
  @media only screen and (max-width: 600px)  {

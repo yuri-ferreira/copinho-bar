@@ -1,19 +1,20 @@
-<!DOCTYPE html>
-<html lang="pt-br">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" href="img/favicon.png" />
-    <link rel="stylesheet" href="/css/style.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
-      rel="stylesheet"
-    />
-    <title>Copinho Bar</title>
-  </head>
-</html>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" href="/img/favicon.png" />
+  <link rel="stylesheet" href="/css/style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+    rel="stylesheet"
+  />
+  <script
+    src="https://kit.fontawesome.com/1393f63ea6.js"
+    crossorigin="anonymous"
+  ></script>
+  <title>Copinho Bar</title>
+</head>
 <body>
   <header>
     <a href="/index.html">
@@ -35,10 +36,10 @@
     </nav>
     <nav class="nav-desktop">
       <button>
-        <a href="html/carrinho.html"><img src="/img/compras.png" alt="" /></a>
+        <a href="/html/carrinho.html"><img src="/img/compras.png" alt="" /></a>
       </button>
       <button>
-        <a href="html/perfil.html"><img src="/img/login.png" alt="" /></a>
+        <a href="/html/login.html"><img src="/img/login.png" alt="" /></a>
       </button>
     </nav>
     <nav class="nav-mobile">
@@ -53,7 +54,7 @@
         </button>
         <div class="hdr2">
           <button>
-            <a href="/html/perfil.html"><img src="/img/login.png" alt="" /></a>
+            <a href="/html/login.html"><img src="/img/login.png" alt="" /></a>
           </button>
           <button>
             <a href="/html/carrinho.html"
@@ -73,5 +74,40 @@
       </ul>
     </div>
   </header>
-  <script src="/js/menuham.js"></script>
+  <section class="perfil">
+    <div class="caixa-perfil">
+      <h1>Olá, NOME USUÁRIO</h1>
+      <div class="info-login">
+        <h1 class="pad">Informações de login</h1>
+        <form class="info-login-form" action="#" method="post">
+          <div>
+            <label for="nome">Nome</label>
+            <input type="text" name="nome" />
+          </div>
+          <div>
+            <label for="email">Email</label>
+            <input type="email" name="email" />
+          </div>
+          <div>
+            <label for="senha">Senha</label>
+            <input type="password" name="senha" />
+          </div>
+        </form>
+      </div>
+      <div class="info-login">
+        <h1>Informações de contato</h1>
+        <form class="info-login-form" action="#" method="post">
+          <div>
+            <label for="telefone">Telefone</label>
+            <input type="tel" name="telefone" />
+          </div>
+          <div>
+            <label for="endereco">Endereço</label>
+            <input type="text" name="endereco" />
+          </div>
+        </form>
+      </div>
+      <input class="logout" type="submit" value="LOGOUT" />
+    </div>
+  </section>
 </body>
