@@ -174,6 +174,39 @@ header .nav-desktop button img {
   align-items: end;
   justify-content: center;
 }
+.container-img2 {
+  background-image: url("/img/453534.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 480px;
+  display: flex;
+  align-items: end;
+  justify-content: center;
+}
+.container-img3 {
+  background-image: url("/img/contato.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 480px;
+  display: flex;
+  align-items: end;
+  justify-content: center;
+}
+.container-img4 {
+  background-image: url("/img/copo.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 480px;
+  display: flex;
+  align-items: end;
+  justify-content: center;
+}
 .container-img .desktopp {
   color: white;
   font-family: Inter;
@@ -1027,7 +1060,72 @@ line-height: normal;
 .logout:hover {
   background-color: #585858;
 }
-
+.sct-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10px;
+}
+.container {
+  width: 1700px;
+  height: 372px;
+  background-color: #F3F3F3;
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+}
+.contato-lista {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.contato-caixa {
+  width: 550px;
+  height: 80px;
+  background: #e1e1e1;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.contato-caixa img {
+  height: 55px;
+  width: 55px;
+  margin-right: auto;
+  margin-left: 30px;
+}
+.contato-caixa a {
+  text-decoration: none;
+  color: black;
+}
+.contato-caixa a:hover {
+  color: gray;
+  transition: ease-in-out 0.1s;
+}
+.contato-caixa a img {
+  height: 55px;
+  width: 55px;
+}
+.contato-caixa p {
+  color: #FFF;
+  font-family: Inter;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  width: 250px;
+  text-align: center;
+}
+.contato-caixa div {
+  width: 20px;
+  height: 20px;
+  margin-right: auto;
+}
  /*  (telefone, 600px pra baixo) */
  @media only screen and (max-width: 600px)  {
   header {
