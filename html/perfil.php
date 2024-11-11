@@ -1,8 +1,37 @@
+<?php
+include 'D:/XAMP/htdocs/copinho-bar/php/header.php';
+include 'D:/XAMP/htdocs/copinho-bar/php/bd_connect.php';
+
+if (!isset($_SESSION['usuario_id'])) {
+    header("Location: ../html/login.php");
+    exit();
+}
+
+$user_id = $_SESSION['usuario_id'];
+$sql = "SELECT * FROM usuarios WHERE id = $user_id";
+$result = $con->query($sql);
+
+if ($result->num_rows > 0) {
+    $user = $result->fetch_assoc();
+} else {
+    echo "Erro ao buscar informações do usuário.";
+    exit();
+}
+if($user['role'] === 'admin') {
+  $btn_adm = true;
+} else {
+  $btn_adm = false;
+}
+
+
+?>
+
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="icon" href="/img/favicon.png" />
-  <link rel="stylesheet" href="/css/style.css" />
+  <link rel="stylesheet" href="/copinho-bar/css/style.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link
@@ -16,98 +45,51 @@
   <title>Copinho Bar</title>
 </head>
 <body>
-  <header>
-    <a href="/index.html">
-      <img
-        src="/img/69af8601-6ff7-464b-a020-a8c336277bc1.png"
-        alt="Logo Copinho Bar"
-        class="logo"
-      />
-    </a>
-    <nav class="nav-desktop">
-      <ul>
-        <li><a href="/html/onde-estamos.html">Onde estamos</a></li>
-        <li><a href="/html/quem-somos.html">Quem somos</a></li>
-        <li>
-          <a href="/html/compras.html">Cervejas artesanais</a>
-        </li>
-        <li><a href="/html/contato.html">Contato</a></li>
-      </ul>
-    </nav>
-    <nav class="nav-desktop">
-      <button>
-        <a href="/html/carrinho.html"><img src="/img/compras.png" alt="" /></a>
-      </button>
-      <button>
-        <a href="/html/login.php"><img src="/img/login.png" alt="" /></a>
-      </button>
-    </nav>
-    <nav class="nav-mobile">
-      <button class="menuham" id="abrirMenu">
-        <img src="/img/h-menu.png" alt="menu" />
-      </button>
-    </nav>
-    <div class="menu-fora" id="menuFora">
-      <div class="hdr2">
-        <button id="fecharMenu">
-          <img src="/img/fechar.png" alt="fechar" />
-        </button>
-        <div class="hdr2">
-          <button>
-            <a href="/html/login.php"><img src="/img/login.png" alt="" /></a>
-          </button>
-          <button>
-            <a href="/html/carrinho.html"
-              ><img src="/img/compras.png" alt=""
-            /></a>
-          </button>
-        </div>
-      </div>
-      <ul>
-        <li><a href="index.html">Página inicial</a></li>
-        <li><a href="/html/onde-estamos.html">Onde estamos</a></li>
-        <li><a href="/html/quem-somos.html">Quem somos</a></li>
-        <li>
-          <a href="/html/compras.html">Cervejas artesanais</a>
-        </li>
-        <li><a href="/html/contato.html">Contato</a></li>
-      </ul>
-    </div>
-  </header>
   <section class="perfil">
-    <div class="caixa-perfil">
-      <h1>Olá, NOME USUÁRIO</h1>
-      <div class="info-login">
-        <h1 class="pad">Informações de login</h1>
-        <form class="info-login-form" action="#" method="post">
-          <div>
-            <label for="nome">Nome</label>
-            <input type="text" name="nome" />
-          </div>
-          <div>
-            <label for="email">Email</label>
-            <input type="email" name="email" />
-          </div>
-          <div>
-            <label for="senha">Senha</label>
-            <input type="password" name="senha" />
-          </div>
-        </form>
-      </div>
-      <div class="info-login">
-        <h1>Informações de contato</h1>
-        <form class="info-login-form" action="#" method="post">
-          <div>
-            <label for="telefone">Telefone</label>
-            <input type="tel" name="telefone" />
-          </div>
-          <div>
-            <label for="endereco">Endereço</label>
-            <input type="text" name="endereco" />
-          </div>
-        </form>
-      </div>
-      <input class="logout" type="submit" value="LOGOUT" />
+  <div class="caixa-perfil">
+    <h1>Olá, <?php echo htmlspecialchars($user['nome']); ?></h1>
+    <div class="info-login">
+      <h1 class="pad">Informações de login</h1>
+      <form class="info-login-form" action="../php/senha.php" method="post">
+        <div>
+          <label for="nome">Nome</label>
+          <input type="text" name="nome" value="<?php echo htmlspecialchars($user['nome']); ?>" readonly />
+        </div>
+        <div>
+          <label for="email">Email</label>
+          <input type="email" name="email" value="<?php echo htmlspecialchars($user['email']); ?>" readonly />
+        </div>
+        <div>
+          <label for="senha">Nova Senha</label>
+          <input type="password" name="nova_senha" placeholder="Digite a nova senha" required />
+        </div>
+        <input type="submit" value="Atualizar Senha" />
+      </form>
     </div>
-  </section>
+    <div class="info-login">
+      <h1>Informações de contato</h1>
+      <form class="info-login-form">
+        <div>
+          <label for="telefone">Telefone</label>
+          <input type="tel" name="telefone" value="<?php echo htmlspecialchars($user['telefone']); ?>" readonly />
+        </div>
+        <div>
+          <label for="endereco">Endereço</label>
+          <input type="text" name="endereco" value="<?php echo htmlspecialchars($user['endereco']); ?>" readonly />
+        </div>
+      </form>
+    </div>
+    <form action="../php/logout.php" method="post">
+      <input class="logout" type="submit" value="LOGOUT" />
+    </form>
+    <?php if ($btn_adm): ?>
+    <a class="a_adm" href="adm.php">
+        <button class="btn_adm">ADMIN</button>
+    </a>
+<?php endif; ?>
+  </div>
+</section>
+<script src="/copinho-bar/js/menuham.js"></script>
+
+
 </body>

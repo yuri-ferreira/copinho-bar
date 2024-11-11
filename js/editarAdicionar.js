@@ -16,3 +16,13 @@ const botaoFecharEdi = document.getElementById('fecharEdi')
 botaoFecharEdi.addEventListener('click', () => {
   document.getElementById("editar").style.display = "none";
 })
+
+const botaoAbrirDel = document.getElementById("abrirDel");
+botaoAbrirDel.addEventListener('click', () => {
+  document.getElementById("deletar").style.display = "flex";
+})
+
+const botaoFecharDel = document.getElementById('fecharDel')
+botaoFecharDel.addEventListener('click', () => {
+  document.getElementById("deletar").style.display = "none";
+})

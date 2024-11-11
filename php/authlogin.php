@@ -1,27 +1,37 @@
 <?php
 session_start();
-$host = 'localhost';
-$user = 'root';
-$password = '';
-$dbname = 'copinhobar';
+include 'bd_connect.php';
 
-$conn = mysqli($host, $user, $password, $dbname);
+if (isset($_SESSION['usuario_id'])) {
+    header("Location: ../html/perfil.php");
+    exit();
+}
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $email = $_POST['Email'];
     $senha = $_POST['Senha'];
 
-    $sql = "SELECT id FROM users WHERE email = '$email' AND senha = '$senha'";
-    $result = $conn->query($sql);
+    $sql = "SELECT id,senha FROM usuarios WHERE email = '$email'";
+    $result = $con->query($sql);
+
 
     if ($result->num_rows > 0) {
         $user = $result->fetch_assoc();
-        $_SESSION['user_id'] = $user['id'];
-        header("Location: perfil.php");
+        $senha_protegida = $user['senha'];
+
+        // Verifica a senha inserida com o hash
+        if (password_verify($senha, $senha_protegida)) {
+        
+            $_SESSION['usuario_id'] = $user['id'];
+            header("Location: ../html/perfil.php");
+            exit();
+        } else {
+            echo "Email ou senha incorretos.";
+        }
     } else {
         echo "Email ou senha incorretos.";
     }
 }
 
-$conn->close();
+$con->close();
 ?>

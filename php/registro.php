@@ -1,10 +1,5 @@
 <?php
-$host = 'localhost';
-$user = 'root';
-$password = '';
-$dbname = 'copinhobar';
-
-$conn = mysqli($host, $user, $password, $dbname);
+include 'D:/XAMP/htdocs/copinho-bar/php/bd_connect.php';
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $email = $_POST['Email'];
@@ -13,19 +8,22 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $nome = $_POST['Nome'];
     $telefone = $_POST['Telefone'];
     $data_nascimento = $_POST['dNascimento'];
+    $maior_de_idade = isset($_POST['idade']) ? 1 : 0;
+
+    $senha_protegida = password_hash($senha, PASSWORD_DEFAULT);
 
 
-    $sql = "INSERT INTO users (email, senha, endereco, nome, telefone, data_nascimento, ) 
-            VALUES ('$email', '$senha', '$endereco', '$nome', '$telefone', '$data_nascimento',)";
+    $sql = "INSERT INTO usuarios (email, senha, endereco, nome, telefone, data_nascimento, maior_de_idade) 
+        VALUES ('$email', '$senha_protegida', '$endereco', '$nome', '$telefone', '$data_nascimento', $maior_de_idade)";
 
-if ($conn->query($sql) === TRUE) {
+if ($con->query($sql) === TRUE) {
   header("Location: ../html/login.php");
   exit();
 } else {
-  echo "Erro: " . $conn->error;
+  echo "Erro: " . $con->error;
 }
 
 }
 
-$conn->close();
+$con->close();
 ?>
