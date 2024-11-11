@@ -283,6 +283,99 @@ header .nav-desktop button img {
   justify-content: center;
   align-items: center;
 }
+ .container .info {
+  max-width: 100%; 
+  margin-right: 400px; 
+  }
+  
+  
+  .container .info p {
+    color: #000;
+    font-family: Inter;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+  }
+  .container iframe {
+    width: 480;
+    height: 310;
+    margin-right: 20px;
+  }
+  
+  
+  .container .info button {
+  background-color: black;
+  color: #fff;
+  border: none;
+  padding: 20px 60px;
+  font-size: 16px;
+  border-radius: 30px;
+  cursor: pointer;
+  margin-top: 40px;
+  transition: background-color 0.3s;
+  }
+  
+  .container .info button:hover {
+  background-color: #0056b3;
+  }
+
+.quem{
+  width: 80%; 
+  max-width: 1600px; 
+  height: 30vh;
+  background-color: rgba(148, 142, 142, 0.174); 
+  display: flex; 
+  justify-content: space-between; 
+  align-items: center; 
+  margin: 60px auto; 
+  border-radius: 10px;
+  
+}
+
+
+.texto- {
+ 
+  width: 942px;
+  flex-shrink: 0;
+  color: #000;
+  font-family: Inter;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-left: 40px;
+
+ }
+
+ .equipe {
+  flex: 1;
+  text-align: center; 
+}
+
+ .equipe h2 {
+  color: #000;
+  font-family: Inter;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.circulo-container {
+  display: flex;
+  gap: 20px; 
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.circulo {
+  width: 168px;
+  height: 168px;
+  border-radius: 84px;
+  background: #4E4E4E;
+}
+
 
 footer {
   width: 100%;
