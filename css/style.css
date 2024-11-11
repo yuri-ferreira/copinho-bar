@@ -164,7 +164,7 @@ header .nav-desktop button img {
 }
 
 .container-img1 {
-  background-image: url("/copinho-bar/img/rotulo.png");
+  background-image: url("/img/rotulo.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -175,7 +175,7 @@ header .nav-desktop button img {
   justify-content: center;
 }
 .container-img2 {
-  background-image: url("/copinho-bar/img/453534.png");
+  background-image: url("/img/453534.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -186,7 +186,7 @@ header .nav-desktop button img {
   justify-content: center;
 }
 .container-img3 {
-  background-image: url("/copinho-bar/img/contato.png");
+  background-image: url("/img/contato.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -197,7 +197,7 @@ header .nav-desktop button img {
   justify-content: center;
 }
 .container-img4 {
-  background-image: url("/copinho-bar/img/copo.png");
+  background-image: url("/img/copo.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
