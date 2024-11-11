@@ -1126,6 +1126,132 @@ line-height: normal;
   height: 20px;
   margin-right: auto;
 }
+.tela-adicionar {
+  width: 400px;
+  height: 340px;
+  background-color: grey;
+  align-self: center;
+  margin-top:  100px;
+  border-radius: 10px;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.tela-adicionar form {
+  display: flex;
+  flex-direction: column;
+  color: #FFF;
+  font-family: Inter;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-align: center;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+}
+.tela-adicionar form input {
+  width: 300px;
+  height: 20px;
+  border-radius: 6px;
+}
+.menu {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 50px;
+}
+.abrir {
+  padding: 20px;
+  background-color: #000;
+  color: white;
+  cursor: pointer;
+}
+.abrir:hover {
+  background-color: #646464;
+  transition: ease-in-out 0.2s;
+}
+.fechar {
+  align-self: flex-end;
+  margin-right: 20px;
+  margin-top: 10px;
+  cursor: pointer;
+}
+.fechar:hover {
+  color: white;
+  transition: ease-in-out 0.2s;
+}
+.tela-adicionar form label:last-of-type {
+  padding: 20px;
+  background-color: #000;
+  border-radius: 10px;
+}
+.tela-adicionar form label:last-of-type:hover {
+  background-color: #646464;
+  cursor: pointer;
+  transition: ease-in-out 0.2s;
+}
+.tela-adicionar form input:last-of-type {
+  padding: auto;
+  background-color: #000;
+  border-radius: 10px;
+  color: white;
+}
+.tela-adicionar form input:last-of-type:hover {
+  background-color: #646464;
+  cursor: pointer;
+  transition: ease-in-out 0.2s;
+}
+.tela-editar {
+  width: 400px;
+  height: 260px;
+  background-color: grey;
+  align-self: center;
+  margin-top:  100px;
+  border-radius: 10px;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.tela-editar form {
+  display: flex;
+  flex-direction: column;
+  color: #FFF;
+  font-family: Inter;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-align: center;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+}
+.tela-editar form input {
+  width: 300px;
+  height: 20px;
+  border-radius: 6px;
+}
+
+.tela-editar form input:last-of-type {
+  padding: auto;
+  background-color: #000;
+  border-radius: 10px;
+  color: white;
+}
+.tela-editar form input:last-of-type:hover {
+  background-color: #646464;
+  cursor: pointer;
+  transition: ease-in-out 0.2s;
+}
+.hidden {
+  display: none;
+}
  /*  (telefone, 600px pra baixo) */
  @media only screen and (max-width: 600px)  {
   header {

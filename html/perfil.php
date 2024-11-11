@@ -39,7 +39,7 @@
         <a href="/html/carrinho.html"><img src="/img/compras.png" alt="" /></a>
       </button>
       <button>
-        <a href="/html/login.html"><img src="/img/login.png" alt="" /></a>
+        <a href="/html/login.php"><img src="/img/login.png" alt="" /></a>
       </button>
     </nav>
     <nav class="nav-mobile">
@@ -54,7 +54,7 @@
         </button>
         <div class="hdr2">
           <button>
-            <a href="/html/login.html"><img src="/img/login.png" alt="" /></a>
+            <a href="/html/login.php"><img src="/img/login.png" alt="" /></a>
           </button>
           <button>
             <a href="/html/carrinho.html"
@@ -74,24 +74,40 @@
       </ul>
     </div>
   </header>
-  <section class="login">
-    <div class="caixa-login">
-      <h1>LOGIN</h1>
-      <form method="post">
-        <label class="lblG" for="Email">Email</label>
-        <input class="inptG" type="text" name="Email" />
-        <label class="lblG" for="Senha">Senha</label>
-        <input class="inptG" type="password" name="Senha" />
-        <div class="lembrar-esqueceu">
+  <section class="perfil">
+    <div class="caixa-perfil">
+      <h1>Olá, NOME USUÁRIO</h1>
+      <div class="info-login">
+        <h1 class="pad">Informações de login</h1>
+        <form class="info-login-form" action="#" method="post">
           <div>
-            <input type="checkbox" name="Lembrar" id="#" />
-            <label for="Lembrar">Lembrar</label>
+            <label for="nome">Nome</label>
+            <input type="text" name="nome" />
           </div>
-          <a href="#">Esqueceu a senha?</a>
-        </div>
-        <input type="submit" value="Entrar" class="entrar-btn" />
-        <p>Não tem conta? <a href="/html/registro.html">registre-se</a></p>
-      </form>
+          <div>
+            <label for="email">Email</label>
+            <input type="email" name="email" />
+          </div>
+          <div>
+            <label for="senha">Senha</label>
+            <input type="password" name="senha" />
+          </div>
+        </form>
+      </div>
+      <div class="info-login">
+        <h1>Informações de contato</h1>
+        <form class="info-login-form" action="#" method="post">
+          <div>
+            <label for="telefone">Telefone</label>
+            <input type="tel" name="telefone" />
+          </div>
+          <div>
+            <label for="endereco">Endereço</label>
+            <input type="text" name="endereco" />
+          </div>
+        </form>
+      </div>
+      <input class="logout" type="submit" value="LOGOUT" />
     </div>
   </section>
 </body>
